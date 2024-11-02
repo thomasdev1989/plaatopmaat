@@ -1,0 +1,23 @@
+<div class=" hidden md:block min-w-48 h-auto   pb-4   ">
+    <div for class="border-b border-b-emerald-600 min-h-48  py-4">
+        <h2 class="font-bold text-gray-800 text-md  text-xl mb-4">Type</h2>
+        <ul class="">
+             <li class="p-1" *ngFor="let item of material"> <input type="checkbox" class="accent-gray-500 size-4 cursor-pointer caret-white	"/>
+                
+                {{item.name}} <span class="font-bold text-gray-700">({{item.amount}})</span></li>
+        </ul>
+    </div>
+    <div for class="border-b border-b-emerald-600 min-h-48  py-4 ">
+        <h2 class="font-bold text-gray-800 text-md text-xl  mb-4">Dikte</h2>
+        <ul class="">
+             <li class="p-1" *ngFor="let item of woodThickness"> <input type="checkbox" class="accent-gray-500 size-4 cursor-pointer caret-white	"/>
+                
+                {{item.thickness}} {{item.unit}}</li>
+        </ul>
+    </div>
+    <div for class="border-b border-b-emerald-600 min-h-48  py-4 ">
+        <h2 class="font-bold text-gray-800 text-md text-xl  mb-4">Prijs</h2>
+   
+    </div>
+
+</div>

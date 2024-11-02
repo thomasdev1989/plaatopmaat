@@ -1,0 +1,15 @@
+<table class=" table-auto md:table-fixed w-full m-auto text-md text-left rtl:text-left  shadow-md rounded-lg p-4  ">
+    <thead class="bg-blue-50 ">
+        <tr class="h-12 ">
+            <th scope="col" class="py-6 w-40"></th>
+            <th scope="col" class=" py-6 w-40 ">Type</th>
+            <th scope="col" class=" py-6 w-40">Dikte</th>
+            <th scope="col" class=" py-6 w-40">Beschikbaar </th>
+            <th scope="col" class=" py-6 w-40">Prijs / m<span class="text-xs align-top">2</span></th>
+            <th scope="col" class="py-6 w-40"></th>
+        </tr>
+    </thead>
+    <tbody class="">
+        <tr class="rounded-md" app-stock-item *ngFor="let item of stockItems" [stockItem]="item"></tr>
+    </tbody>
+</table>
